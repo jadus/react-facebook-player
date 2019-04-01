@@ -50,6 +50,8 @@ var FacebookPlayer = function (_React$Component) {
             return;
           }
           js = d.createElement(s);js.id = id;
+          js.async = true;
+          js.defer = true;
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2";
           js.onload = function () {
             return resolve(window.FB);
@@ -92,8 +94,8 @@ var FacebookPlayer = function (_React$Component) {
 
       FB.init({
         appId: appId,
-        xfbml: true,
-        version: 'v2.5'
+        xfbml: false,
+        version: 'v3.2'
       });
 
       FB.Event.subscribe('xfbml.ready', function (msg) {
