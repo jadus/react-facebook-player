@@ -50,7 +50,7 @@ var FacebookPlayer = function (_React$Component) {
             return;
           }
           js = d.createElement(s);js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2";
           js.onload = function () {
             return resolve(window.FB);
           };
